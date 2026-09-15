@@ -37,7 +37,7 @@ Analisis ini mencakup 15 kueri SQL terstruktur untuk menjawab kebutuhan performa
 * **Periode Aktif Toko:** Menghitung total hari aktif transaksi, rentang minggu ISO (*ISO weeks*), dan total bulan operasional.
 
 ### 2. Analisis Tren Waktu (Bulanan & Harian)
-* **Pertumbuhan Penjualan Bulanan:** Menghitung total pendapatan per bulan beserta persentase perubahannya (*Month-over-Month growth*).
+* **Pertumbuhan Penjalan Bulanan:** Menghitung total pendapatan per bulan beserta persentase perubahannya (*Month-over-Month growth*).
 * **Faktor Pendorong Lonjakan Penjualan November:** Menganalisis kategori pizza yang menjadi penopang utama kenaikan pendapatan di bulan November.
 * **Bulan Penjualan Terbaik:** Menentukan dua bulan dengan performa tertinggi berdasarkan pendapatan, jumlah pesanan, dan unit pizza terjual.
 * **Kategori Teratas di Bulan Tertentu:** Mengetahui kategori dengan penjualan kuantitas tertinggi pada bulan Mei dan Juli.
