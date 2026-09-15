@@ -1,5 +1,5 @@
 # pizza-sales-analysis
-**End-to-end pizza sales analysis using SQL, uncovering revenue trends, peak operational hours, product mix performance, and ingredient utilization.**
+**Analisis penjualan pizza menggunakan SQL untuk melihat tren pendapatan, jam paling ramai pesanan, menu terlaris, dan informasi pemakaian bahan baku**
 
 ![Looker Studio](https://img.shields.io/badge/LOOKER_STUDIO-4285F4?style=for-the-badge&logo=looker&logoColor=white)
 ![Google BigQuery](https://img.shields.io/badge/GOOGLE_BIGQUERY-669DF6?style=for-the-badge&logo=googlecloud&logoColor=white)
