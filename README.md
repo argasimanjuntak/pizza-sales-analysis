@@ -9,12 +9,20 @@
 ![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Markdown](https://img.shields.io/badge/MARKDOWN-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
+## 🗂️ Struktur Data & Skema Tabel
 
+Dataset yang dianalisis mencakup data transaksi penjualan pizza selama satu tahun penuh yang terbagi ke dalam 4 tabel relasional utama:
 
-1. Overall, the restaurant recorded total sales of $817,860.05 from 21,350 orders, with 49,574 pizzas sold and an average order value (AOV) of $38.31.
-   
-2. Operational data shows a full 12 months of active operations, spanning 53 calendar weeks, with a total of 358 transaction days (reflecting a 7-day window of inactivity in a 365-day year).
+| Nama Tabel | Deskripsi Isi | Kolom Utama (Key Attributes) |
+| :--- | :--- | :--- |
+| **`orders`** | Menyimpan informasi tingkat transaksi per pesanan. | `order_id`, `date`, `time` |
+| **`order_details`** | Menyimpan rincian setiap item pizza yang dibeli dalam satu pesanan. | `order_details_id`, `order_id`, `pizza_id`, `quantity` |
+| **`pizzas`** | Menyimpan katalog varian fisik pizza, ukuran, dan harga satuannya. | `pizza_id`, `pizza_type_id`, `size`, `price` |
+| **`pizza_types`** | Menyimpan informasi master menu, pengelompokan kategori, dan daftar bahan baku. | `pizza_type_id`, `name`, `category`, `ingredients` |
 
-3. November Records the Largest Growth Surge +9,95%
+---
 
-4.The chicken category was the primary driver of the November surge
+### 🔗 Hubungan Antartabel (Data Relationships)
+* **`orders.order_id` $\rightarrow$ `order_details.order_id`**: Menghubungkan waktu/tanggal transaksi dengan rincian item yang dibeli.
+* **`pizzas.pizza_id` $\rightarrow$ `order_details.pizza_id`**: Menghubungkan item pesanan dengan ukuran (*size*) dan harga (*price*) spesifik.
+* **`pizza_types.pizza_type_id` $\rightarrow$ `pizzas.pizza_type_id`**: Mengaitkan varian SKU pizza dengan kategori (*Classic, Supreme, Chicken, Veggie*) dan rincian bahan baku (*ingredients*).
